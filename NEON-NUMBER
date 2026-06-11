@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if((n<0 || n>9)){
+            System.out.print("Invalid Input");
+            }
+        if(n<10){ 
+        int sq = n*n;
+        int fn = sq /10;
+        int ln = sq %10;
+         
+        
+        if(fn + ln == n){
+            System.out.printf("%03d is a Neon Number.",n);
+        }
+        else{
+            System.out.printf("%04d is not a Neon Number.",n);
+        }}
+    }
+}
