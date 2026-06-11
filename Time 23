@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int h = sc.nextInt();
+        int m = sc.nextInt();
+        int s = sc.nextInt();
+        if(m>=60){
+            h = h+(m/60);
+            m = m - (((int)(m / 60))*60);
+        }
+        if(s >=60){
+            m = m + (s/60);
+            s = s - (((int)(s / 60))*60);
+    }
+        
+    System.out.println("Total Number of hours is "+h);
+    System.out.println("Total Number of minutes is "+m);
+    System.out.print("Total Number of seconds is "+s);
+}} 
